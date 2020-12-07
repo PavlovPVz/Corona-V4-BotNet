@@ -2,11 +2,17 @@
 // Copy paste this code and put it all on your terminal all at once:
 
  yum update -y
+ 
  yum install epel-release -y
+ 
  yum groupinstall "Development Tools" -y
+ 
  yum install gmp-devel -y
+ 
  ln -s /usr/lib64/libgmp.so.3  /usr/lib64/libgmp.so.10
+ 
  yum install screen wget bzip2 gcc nano gcc-c++ electric-fence sudo git libc6-dev httpd xinetd tftpd tftp-server mysql mysql-server gcc glibc-static -y
+ 
 
 mkdir /etc/xcompile
 cd /etc/xcompile 
